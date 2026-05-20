@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cloud View 75 — Premium Office Spaces in Mohali</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body class="body-base">
+
+<!-- ═══════════════ NAVBAR ═══════════════ -->
+<nav id="navbar">
+  <div class="navbar-container container-xl navbar-inner">
+
+    <!-- LOGO -->
+    <a href="#" class="navbar-logo-wrap">
+      <img src="images/26.png" alt="Cloud View 75" class="navbar-logo-img"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+      />
+      <span class="navbar-brand-text" style="display:none;">Cloud View 75</span>
+    </a>
+
+    <!-- DESKTOP NAV -->
+    <ul class="desktop-nav">
+      <li><a href="#gallery"   class="nav-link">Gallery</a></li>
+      <li><a href="#features"  class="nav-link">Workspaces</a></li>
+      <li><a href="#why"       class="nav-link">Why Us</a></li>
+      <li><a href="#about"     class="nav-link">About</a></li>
+      <li><a href="#amenities" class="nav-link">Amenities</a></li>
+      <li><a href="#location"  class="nav-link">Location</a></li>
+    </ul>
+
+    <div class="navbar-actions">
+      <span class="navbar-contact-label">Contact Us</span>
+      <a href="tel:+91 96462 00037" class="navbar-phone-cta">
+        <svg class="icon-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+        +91 96462 00037
+      </a>
+      <button id="hamburger" class="hamburger-btn">
+        <span class="ham-line"></span>
+        <span class="ham-line"></span>
+        <span class="ham-line ham-line-short"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu" class="mobile-menu hidden" style="background: #efd86a; box-shadow: 0 4px 16px rgba(230,184,0,0.18);">
+    <a href="#gallery"   class="mobile-nav-link">Gallery</a>
+    <a href="#features"  class="mobile-nav-link">Workspaces</a>
+    <a href="#why"       class="mobile-nav-link">Why Us</a>
+    <a href="#about"     class="mobile-nav-link">About</a>
+    <a href="#amenities" class="mobile-nav-link">Amenities</a>
+    <a href="#location"  class="mobile-nav-link">Location</a>
+    <a href="tel:+917807800142" class="mobile-contact-cta" style="border-radius:6px;">
+      <svg class="icon-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+      +91 7807800142
+    </a>
+  </div>
+</nav>
+
+<!-- ═══════════════ HERO ═══════════════ -->
+<section id="hero" class="section-overflow">
+  <div class="hero-bg abs-inset"></div>
+  <div class="hero-grid abs-inset hero-grid-opacity"></div>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+
+  <div class="hero-content-wrap container-xl px-lg">
+    <div class="reveal-up">
+      <h1 class="hero-heading">
+        <span class="hero-h1-line">Affordable Office</span>
+        <span class="hero-h1-line text-gradient">Spaces Designed</span>
+        <span class="hero-h1-line">for Your Business.</span>
+      </h1>
+      <p class="hero-subtext">
+        Affordable, fully customizable office spaces in Sector 75, Mohali. Tailored workspace infrastructure designed to match your business needs — for startups, SMEs, and growing enterprises.
+      </p>
+      <div class="hero-cta-group">
+        <a href="tel:+917807800142" class="btn-gold hero-cta-primary" style="border-radius:6px;">
+          Call Us &nbsp;
+        </a>
+        <a href="#features" class="hero-btn-outline hero-cta-secondary" style="border-radius:6px;">
+          Explore Spaces
+        </a>
+      </div>
+    </div>
+
+    <!-- Hero right: building photo stacked card with carousel -->
+    <div class="reveal-up delay-200 hero-card-col">
+      <div class="hero-card-stack">
+        <!-- Back card (decorative) -->
+        <div class="hero-img-card card-back">
+          <div class="hero-img-inner img-bg-2"></div>
+        </div>
+        <!-- Front card with carousel -->
+        <div class="hero-img-card card-front shadow-hero" id="heroCarouselCard">
+          <!-- Carousel slides -->
+          <div class="hero-carousel" id="heroCarousel">
+            <div class="hero-carousel-slide active lightbox-trigger" data-img-src="images/11.png" style="background-image:url('images/11.png')"></div>
+            <div class="hero-carousel-slide lightbox-trigger" data-img-src="images/4.png" style="background-image:url('images/4.png')"></div>
+            <div class="hero-carousel-slide lightbox-trigger" data-img-src="images/premium_cabin.webp" style="background-image:url('images/premium_cabin.webp')"></div>
+            <div class="hero-carousel-slide lightbox-trigger" data-img-src="images/premium_balcony.webp" style="background-image:url('images/premium_balcony.webp')"></div>
+            <div class="hero-carousel-slide lightbox-trigger" data-img-src="images/12.png" style="background-image:url('images/12.png')"></div>
+          </div>
+          <!-- Navigation arrows -->
+          <button class="hero-carousel-btn hero-carousel-prev" id="heroPrev" aria-label="Previous image">
+            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"/></svg>
+          </button>
+          <button class="hero-carousel-btn hero-carousel-next" id="heroNext" aria-label="Next image">
+            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
+          </button>
+          <!-- Dots -->
+          <div class="hero-carousel-dots" id="heroCarouselDots"></div>
+          <div class="hero-card-badge">
+            <span class="hero-badge-text">✦ Sector 75, Mohali</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ TRUSTED BY MARQUEE ═══════════════ -->
+<section class="marquee-section">
+  <div class="container-xl px-std marquee-label-wrap">
+    <p class="marquee-label">Trusted by Forward-Thinking Companies in Mohali &amp; Chandigarh</p>
+  </div>
+  <div class="marquee-wrapper">
+    <div class="marquee-track">
+      <div class="marquee-item"><div class="brand-pill">IT Startups</div></div>
+      <div class="marquee-item"><div class="brand-pill">Creative Agencies</div></div>
+      <div class="marquee-item"><div class="brand-pill">Consulting Firms</div></div>
+      <div class="marquee-item"><div class="brand-pill">Enterprise Teams</div></div>
+      <div class="marquee-item"><div class="brand-pill">Tech Companies</div></div>
+      <div class="marquee-item"><div class="brand-pill">SMEs &amp; Startups</div></div>
+      <div class="marquee-item"><div class="brand-pill">Corporate Offices</div></div>
+      <div class="marquee-item"><div class="brand-pill">Growing Businesses</div></div>
+      <div class="marquee-item"><div class="brand-pill">IT Startups</div></div>
+      <div class="marquee-item"><div class="brand-pill">Creative Agencies</div></div>
+      <div class="marquee-item"><div class="brand-pill">Consulting Firms</div></div>
+      <div class="marquee-item"><div class="brand-pill">Enterprise Teams</div></div>
+      <div class="marquee-item"><div class="brand-pill">Tech Companies</div></div>
+      <div class="marquee-item"><div class="brand-pill">SMEs &amp; Startups</div></div>
+      <div class="marquee-item"><div class="brand-pill">Corporate Offices</div></div>
+      <div class="marquee-item"><div class="brand-pill">Growing Businesses</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ GALLERY ═══════════════ -->
+<section id="gallery" class="section-py bg-white">
+  <div class="container-xl px-lg">
+    <div class="section-header reveal-up">
+      <h2 class="section-heading mt-3">A Workspace You'll<br/>Actually Love Coming To</h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item gallery-tall reveal-up delay-100 lightbox-trigger" data-img-src="images/premium_balcony.webp">
+        <div class="gallery-img img-g1"></div>
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-content">
+            <span class="gallery-overlay-title">Balcony</span>
+            <p class="gallery-overlay-desc">Open balcony spaces with modern aesthetics, natural light, and a refreshing environment for relaxation and informal discussions.</p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item reveal-up delay-150 lightbox-trigger" data-img-src="images/9.png">
+        <div class="gallery-img img-g2"></div>
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-content">
+            <span class="gallery-overlay-title">Entry</span>
+            <p class="gallery-overlay-desc">A premium entrance experience designed to create a professional and welcoming first impression for visitors and clients.</p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item reveal-up delay-200 lightbox-trigger" data-img-src="images/8.png">
+        <div class="gallery-img img-g3"></div>
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-content">
+            <span class="gallery-overlay-title">Cafe</span>
+            <p class="gallery-overlay-desc">A stylish breakout area offering a relaxed atmosphere for networking, coffee breaks, and informal meetings.</p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item gallery-wide reveal-up delay-250 lightbox-trigger" data-img-src="images/7.png">
+        <div class="gallery-img img-g4"></div>
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-content">
+            <span class="gallery-overlay-title">Private Cabin</span>
+            <p class="gallery-overlay-desc">Fully furnished private cabins designed for focused work, team collaboration, and premium comfort.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ WORKSPACE SHOWCASE ═══════════════ -->
+<section id="workspace-showcase" class="section-py bg-slate-50">
+  <div class="container-xl px-lg">
+    <div class="section-header reveal-up">
+      <h2 class="section-heading mt-3">Inside Cloud View 75 —<br/>Every Space, Crafted with Purpose</h2>
+      <p class="section-sub mt-4 section-sub-constrained">From collaborative lounges to private executive cabins — every space is customizable and designed to elevate the way your team works.</p>
+    </div>
+    <div class="workspace-showcase-grid">
+      <div class="gallery-item gallery-tall reveal-up delay-100 lightbox-trigger" data-img-src="images/34.png">
+        <div class="gallery-img img-ws-34"></div>
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-content">
+            <span class="gallery-overlay-title">Modern Open Workspace</span>
+            <p class="gallery-overlay-desc">Spacious workstation setup with premium interiors built for productivity and seamless collaboration.</p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item reveal-up delay-150 lightbox-trigger" data-img-src="images/33.png">
+        <div class="gallery-img img-ws-33"></div>
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-content">
+            <span class="gallery-overlay-title">Premium Discussion Lounge</span>
+            <p class="gallery-overlay-desc">Elegant collaborative lounge designed for client meetings, creative discussions, and relaxed team interactions.</p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item reveal-up delay-200 lightbox-trigger" data-img-src="images/35.png">
+        <div class="gallery-img img-ws-35"></div>
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-content">
+            <span class="gallery-overlay-title">Executive Meeting Room</span>
+            <p class="gallery-overlay-desc">Professional boardroom equipped for presentations, strategy meetings, and team conferences.</p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item reveal-up delay-250 lightbox-trigger" data-img-src="images/36.png">
+        <div class="gallery-img img-ws-36"></div>
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-content">
+            <span class="gallery-overlay-title">Private Executive Cabin</span>
+            <p class="gallery-overlay-desc">Fully furnished premium cabin space offering privacy, comfort, and a professional work environment.</p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item reveal-up delay-300 lightbox-trigger" data-img-src="images/37.png">
+        <div class="gallery-img img-ws-37"></div>
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-content">
+            <span class="gallery-overlay-title">Collaborative Team Floor</span>
+            <p class="gallery-overlay-desc">Dynamic shared workspace crafted for growing teams, startups, and high-performance professionals.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ FEATURES ═══════════════ -->
+<section id="features" class="section-py bg-white">
+  <div class="container-xl px-lg">
+    <div class="section-header features-header">
+      <h2 class="section-heading mt-3">Spaces Built for Every<br/>Stage of Growth</h2>
+      <p class="section-sub mt-4 section-sub-constrained">From solo founders to enterprise teams, Cloud View 75 offers affordable, customizable workspace environments with everything you need from day one.</p>
+    </div>
+    <div class="grid-3col gap-6">
+      <div class="feature-card reveal-up delay-100">
+        <div class="feature-img img-desk-1 lightbox-trigger" data-img-src="images/premium_cabin.webp" style="cursor:pointer;"></div>
+        <div class="card-body">
+          <h3 class="card-title">Private Cabins</h3>
+          <p class="card-desc">Affordable private cabins featuring modern glass interiors, warm lighting, and elegant aesthetics — fully customizable to your team size, brand, and business requirements.</p>
+          <div class="learn-more-link">Learn more</div>
+        </div>
+      </div>
+      <div class="feature-card reveal-up delay-200">
+        <div class="feature-img img-desk-2 lightbox-trigger" data-img-src="images/12.png" style="cursor:pointer;"></div>
+        <div class="card-body">
+          <h3 class="card-title">Open Workspace</h3>
+          <p class="card-desc">Flexible open floors with modern furniture and great energy — layouts fully adaptable to your team's size and working style, at an affordable price point.</p>
+          <div class="learn-more-link">Learn more</div>
+        </div>
+      </div>
+      <div class="feature-card reveal-up delay-300">
+        <div class="feature-img img-desk-5 lightbox-trigger" data-img-src="images/premium_balcony.webp" style="cursor:pointer;"></div>
+        <div class="card-body">
+          <div class="feature-popular-badge">★ Most Popular</div>
+          <h3 class="card-title">Open Balcony &amp; Breakout Spaces</h3>
+          <p class="card-desc">Lush greenery, open balconies, and airy breakout zones — thoughtfully integrated to give your team a refreshing environment to recharge and connect.</p>
+          <div class="learn-more-link">Learn more</div>
+        </div>
+      </div>
+      <div class="feature-card reveal-up delay-400">
+        <div class="feature-img img-desk-35 lightbox-trigger" data-img-src="images/35.png" style="cursor:pointer;"></div>
+        <div class="card-body">
+          <h3 class="card-title">Executive Meeting Room</h3>
+          <p class="card-desc">Professional boardroom equipped with a large conference table, presentation screen, and premium acoustics for strategy sessions and client meetings.</p>
+          <div class="learn-more-link">Learn more</div>
+        </div>
+      </div>
+      <div class="feature-card reveal-up delay-500">
+        <div class="feature-img img-desk-36 lightbox-trigger" data-img-src="images/36.png" style="cursor:pointer;"></div>
+        <div class="card-body">
+          <h3 class="card-title">Private Executive Cabin</h3>
+          <p class="card-desc">Customizable, fully furnished cabin spaces offering privacy, comfort, and a professional environment — designed to reflect your brand and leadership style.</p>
+          <div class="learn-more-link">Learn more</div>
+        </div>
+      </div>
+      <div class="feature-card reveal-up delay-600">
+        <div class="feature-img img-workspace-6 lightbox-trigger" data-img-src="images/38.png" style="cursor:pointer;"></div>
+        <div class="card-body">
+          <h3 class="card-title">Focused Team Workspace</h3>
+          <p class="card-desc">Flexible workstation setups designed for focused productivity and collaboration — configurable to suit your team structure and operational requirements.</p>
+          <div class="learn-more-link">Learn more</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ WHY CHOOSE ═══════════════ -->
+<section id="why" class="section-py bg-slate-50">
+  <div class="container-xl px-lg">
+    <div class="section-header reveal-up">
+      <h2 class="section-heading mt-3">Everything Your Business<br/>Needs to Thrive</h2>
+      <p class="section-sub mt-4 section-sub-wide">More than just office space — Cloud View 75 gives your business a strategic edge through flexible, affordable infrastructure, an unbeatable location, and a thriving professional community.</p>
+    </div>
+    <div class="grid-3col gap-6">
+      <div class="why-card reveal-up delay-100">
+        <div class="why-icon-wrap"><svg class="icon-md" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg></div>
+        <h3 class="why-title">Affordable &amp; Customizable Office Spaces</h3>
+        <p class="why-desc">Fully furnished, flexible workspaces with private cabins and open work areas — tailored to your business requirements so you can move in on your terms, without setup delays or hidden costs.</p>
+      </div>
+      <div class="why-card reveal-up delay-150">
+        <div class="why-icon-wrap"><svg class="icon-md" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div>
+        <h3 class="why-title">Reliable Infrastructure</h3>
+        <p class="why-desc">100% power backup and IT-ready infrastructure ensure your business runs without interruption. Built for zero downtime productivity.</p>
+      </div>
+      <div class="why-card reveal-up delay-200">
+        <div class="why-icon-wrap"><svg class="icon-md" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg></div>
+        <h3 class="why-title">Natural Light &amp; Comfort</h3>
+        <p class="why-desc">Offices designed with ample natural light and proper ventilation — a comfortable, productive environment your team will love.</p>
+      </div>
+      <div class="why-card reveal-up delay-250">
+        <div class="why-icon-wrap"><svg class="icon-md" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div>
+        <h3 class="why-title">Prime Business Location</h3>
+        <p class="why-desc">Situated in Sector 75's major commercial belt, next to IT companies, corporate offices, and Industrial Area Phase 8A.</p>
+      </div>
+      <div class="why-card reveal-up delay-300">
+        <div class="why-icon-wrap"><svg class="icon-md" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg></div>
+        <h3 class="why-title">Excellent Connectivity</h3>
+        <p class="why-desc">Close to Airport Road and Chandigarh — smooth commuting, easy client access, and hassle-free travel for your entire team.</p>
+      </div>
+      <div class="why-card reveal-up delay-350">
+        <div class="why-icon-wrap"><svg class="icon-md" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12z"/></svg></div>
+        <h3 class="why-title">Lifestyle &amp; Convenience</h3>
+        <p class="why-desc">Surrounded by cafés and restaurants — Café Plus at Best Western, Warehouse Café — perfect for client meetings and team outings.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ ABOUT ═══════════════ -->
+<section id="about" class="section-py bg-white">
+  <div class="container-xl px-lg">
+    <div class="grid-2col gap-16 items-center">
+      <div class="about-img-wrap reveal-up">
+        <div class="about-img-container">
+          <div class="about-carousel" id="aboutCarousel" style="width:100%;height:440px;border-radius:24px;overflow:hidden;box-shadow:0 20px 60px rgba(212,160,23,0.12);position:relative;cursor:pointer;">
+            <div class="about-carousel-slide active lightbox-trigger" data-img-src="images/4.png" style="background-image:url('images/4.png')"></div>
+            <div class="about-carousel-slide lightbox-trigger" data-img-src="images/11.png" style="background-image:url('images/11.png')"></div>
+            <div class="about-carousel-slide lightbox-trigger" data-img-src="images/premium_cabin.webp" style="background-image:url('images/premium_cabin.webp')"></div>
+            <div class="about-carousel-slide lightbox-trigger" data-img-src="images/9.png" style="background-image:url('images/9.png')"></div>
+            <div class="about-carousel-slide lightbox-trigger" data-img-src="images/33.png" style="background-image:url('images/33.png')"></div>
+            <div class="about-carousel-slide lightbox-trigger" data-img-src="images/34.png" style="background-image:url('images/34.png')"></div>
+            <div class="about-carousel-slide lightbox-trigger" data-img-src="images/35.png" style="background-image:url('images/35.png')"></div>
+            <div class="about-carousel-slide lightbox-trigger" data-img-src="images/36.png" style="background-image:url('images/36.png')"></div>
+            <div class="about-carousel-slide lightbox-trigger" data-img-src="images/37.png" style="background-image:url('images/37.png')"></div>
+            <div class="about-carousel-slide lightbox-trigger" data-img-src="images/39.png" style="background-image:url('images/39.png')"></div>
+            <button class="about-carousel-btn about-carousel-prev" id="aboutPrev" aria-label="Previous">
+              <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"/></svg>
+            </button>
+            <button class="about-carousel-btn about-carousel-next" id="aboutNext" aria-label="Next">
+              <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
+            </button>
+            <div class="about-carousel-dots" id="aboutCarouselDots"></div>
+          </div>
+          <div class="about-badge">
+            <span class="about-badge-title">Plot E-272</span>
+            <span class="about-badge-sub">Sector 75, Mohali</span>
+          </div>
+        </div>
+      </div>
+      <div class="reveal-up delay-100">
+        <h2 class="section-heading mt-3">A Building Built for<br/>Business Excellence</h2>
+        <p class="about-body-text mt-5">Cloud View 75 is a premium commercial building located at Plot No. E-272, Industrial Area, Sector 75, Mohali. Designed with modern businesses in mind, it offers affordable, fully customizable office spaces that can be configured according to your business needs — so you can focus entirely on what matters: growing your business.</p>
+        <p class="about-body-text mt-4">The building features a flexible mix of private cabins and open work areas, meeting rooms, and conference facilities — all customizable to your team's size and requirements, set within a thriving commercial and IT hub surrounded by leading tech companies, corporate offices, and Industrial Area Phase 8A.</p>
+        <div class="about-stats-grid mt-8">
+          <div class="about-stat-card">
+            <div class="about-stat-number">7</div>
+            <div class="about-stat-label">Floors of premium office space</div>
+          </div>
+          <div class="about-stat-card">
+            <div class="about-stat-number">100%</div>
+            <div class="about-stat-label">Power backup guaranteed</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ AMENITIES ═══════════════ -->
+<section id="amenities" class="section-py bg-slate-50">
+  <div class="container-xl px-lg">
+    <div class="section-header reveal-up">
+      <h2 class="section-heading mt-3">World-Class Amenities,<br/>Zero Hidden Costs</h2>
+      <p class="section-sub mt-4 section-sub-constrained">Every workspace at Cloud View 75 comes fully equipped — no surprise add-ons, no hidden costs. Just premium infrastructure at an affordable price, from day one.</p>
+    </div>
+    <div class="amenities-grid">
+      <div class="amenity-card reveal-up delay-100"><div class="amenity-icon"><svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg></div><span class="amenity-label">Meeting Rooms</span></div>
+      <div class="amenity-card reveal-up delay-150"><div class="amenity-icon"><svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div><span class="amenity-label">100% Power Backup</span></div>
+      <div class="amenity-card reveal-up delay-250"><div class="amenity-icon"><svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg></div><span class="amenity-label">Fully Furnished</span></div>
+      <div class="amenity-card reveal-up delay-200"><div class="amenity-icon"><svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg></div><span class="amenity-label">24/7 CCTV Security</span></div>
+      <div class="amenity-card reveal-up delay-100"><div class="amenity-icon"><svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg></div><span class="amenity-label">Air-Conditioned</span></div>
+      <div class="amenity-card reveal-up delay-150"><div class="amenity-icon"><svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z"/></svg></div><span class="amenity-label">Cafeteria Nearby</span></div>
+      <div class="amenity-card reveal-up delay-250"><div class="amenity-icon"><svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064"/></svg></div><span class="amenity-label">Natural Ventilation</span></div>
+      <div class="amenity-card reveal-up delay-300"><div class="amenity-icon"><svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div><span class="amenity-label">Airport Road Access</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ STATS ═══════════════ -->
+<section class="section-py stats-section section-overflow">
+  <div class="container-xl px-lg">
+    <div class="stats-grid">
+      <div class="stat-item stats-cell reveal-up delay-100">
+        <div class="stat-number"><span class="counter" data-target="7">0</span></div>
+        <div class="stat-label">Floors of Office Space</div>
+      </div>
+      <div class="stat-item stats-cell reveal-up delay-200">
+        <div class="stat-number"><span class="counter" data-target="100">0</span>%</div>
+        <div class="stat-label">Power Backup</div>
+      </div>
+      <div class="stat-item stats-cell reveal-up delay-300">
+        <div class="stat-number"><span class="counter" data-target="24">0</span>/7</div>
+        <div class="stat-label">CCTV Security</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ LOCATION ═══════════════ -->
+<section id="location" class="section-py bg-slate-50">
+  <div class="container-xl px-lg">
+    <div class="section-header reveal-up">
+      <h2 class="section-heading mt-3">Strategically Located in<br/>the Heart of Mohali</h2>
+      <p class="section-sub mt-4 section-sub-constrained">Plot No. E-272, Industrial Area, Sector 75, Mohali — close to Airport Road, Phase 8A, and the Chandigarh–Mohali corporate corridor.</p>
+    </div>
+    <div class="grid-2col gap-12 items-center">
+      <div class="reveal-up">
+        <a href="https://www.google.com/maps/dir/30.760068,76.6302577/Cloud+View+75,+Plot+No+E-272,+Industrial+Area,+Sector+75,+Sahibzada+Ajit+Singh+Nagar,+Punjab+140307/@30.7325537,76.623677,13z/data=!4m10!4m9!1m1!4e1!1m5!1m1!1s0x390fefd418477c95:0xe50e6531a1b9a0c!2m2!1d76.6889139!2d30.6984346!5i2?entry=ttu&g_ep=EgoyMDI2MDUwMi4wIKXMDSoASAFQAw%3D%3D"
+           target="_blank" rel="noopener noreferrer" class="map-card">
+          <div class="map-frame-wrap">
+            <iframe title="Cloud View 75 Location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3433.01!2d76.6889139!3d30.6984346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fefd418477c95%3A0xe50e6531a1b9a0c!2sCloud%20View%2075!5e0!3m2!1sen!2sin!4v1"
+              width="100%" height="340" style="border:0;border-radius:20px 20px 0 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="map-cta-bar">
+            <div class="map-cta-info">
+              <div class="map-pin-icon">
+                <svg class="icon-sm" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              </div>
+              <div>
+                <div class="map-place-name">Cloud View 75</div>
+                <div class="map-place-addr">Plot E-272, Sector 75, Mohali, Punjab 140307</div>
+              </div>
+            </div>
+            <div class="map-directions-btn btn-gold" style="border-radius:6px;">
+              <svg class="icon-xs" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+              Get Directions
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="reveal-up delay-100 location-highlights-col">
+        <h3 class="location-highlight-heading">Why Our Location Stands Out</h3>
+        <p class="location-highlight-sub">Sector 75 is one of Mohali's fastest-growing commercial corridors, offering unmatched connectivity and a vibrant professional ecosystem.</p>
+        <div class="location-cards-list">
+          <div class="location-highlight-card"><div class="lh-icon bg-gold-50"><svg class="icon-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg></div><div><div class="lh-title">Airport Road Proximity</div><div class="lh-desc">Direct access to Airport Road for seamless client visits and employee commutes from Chandigarh.</div></div></div>
+          <div class="location-highlight-card"><div class="lh-icon bg-gold-50"><svg class="icon-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg></div><div><div class="lh-title">Industrial Area Phase 8A</div><div class="lh-desc">Surrounded by leading IT companies and corporates, enabling collaboration and business networking.</div></div></div>
+          <div class="location-highlight-card"><div class="lh-icon bg-gold-50"><svg class="icon-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12z"/></svg></div><div><div class="lh-title">Dining &amp; Lifestyle</div><div class="lh-desc">Café Plus at Best Western, Warehouse Café and multiple restaurants within minutes.</div></div></div>
+          <div class="location-highlight-card"><div class="lh-icon bg-gold-50"><svg class="icon-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg></div><div><div class="lh-title">Chandigarh Connectivity</div><div class="lh-desc">Easy access to Chandigarh's main business districts, courts, and government offices.</div></div></div>
+        </div>
+        <a href="https://www.google.com/maps/dir/30.760068,76.6302577/Cloud+View+75,+Plot+No+E-272,+Industrial+Area,+Sector+75,+Sahibzada+Ajit+Singh+Nagar,+Punjab+140307/@30.7325537,76.623677,13z/data=!4m10!4m9!1m1!4e1!1m5!1m1!1s0x390fefd418477c95:0xe50e6531a1b9a0c!2m2!1d76.6889139!2d30.6984346!5i2?entry=ttu&g_ep=EgoyMDI2MDUwMi4wIKXMDSoASAFQAw%3D%3D"
+           target="_blank" rel="noopener noreferrer"
+           class="location-maps-btn btn-gold" style="border-radius:6px;">
+          <svg class="icon-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+          Open in Google Maps
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<footer class="footer-base">
+  <div class="container-xl px-lg">
+    <div class="footer-grid">
+      <div class="footer-brand-col">
+        <div class="footer-logo-wrap">
+          <img src="images/26.png" alt="Cloud View 75" class="footer-logo-img"
+               onerror="this.style.display='none';document.getElementById('footer-logo-fb').style.display='flex'" />
+          <div id="footer-logo-fb" style="display:none;align-items:center;gap:8px;">
+            <div style="width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,#FFD85C,#FFCD32);display:flex;align-items:center;justify-content:center;">
+              <span style="color:#0F0F0F;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:11px;letter-spacing:-0.02em;">CV</span>
+            </div>
+            <div>
+              <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;color:#fff;display:block;line-height:1.1;letter-spacing:-0.03em;">Cloud View</span>
+              <span style="font-family:'Manrope',sans-serif;font-weight:700;font-size:10px;color:#FFCD32;letter-spacing:.12em;text-transform:uppercase;">75 · MOHALI</span>
+            </div>
+          </div>
+        </div>
+        <p class="footer-brand-desc">Affordable, customizable office spaces in Sector 75, Mohali. Built for the modern business — from startups to enterprises.</p>
+      </div>
+      <div>
+        <h4 class="footer-col-heading">Quick Links</h4>
+        <ul class="footer-links-list">
+          <li><a href="#about"     class="footer-link">About the Building</a></li>
+          <li><a href="#features"  class="footer-link">Workspaces</a></li>
+          <li><a href="#amenities" class="footer-link">Amenities</a></li>
+          <li><a href="#why"       class="footer-link">Why Cloud View 75</a></li>
+          <li><a href="#gallery"   class="footer-link">Gallery</a></li>
+          <li><a href="#location"  class="footer-link">Location &amp; Directions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-heading">Workspaces</h4>
+        <ul class="footer-links-list">
+          <li><a href="#features"  class="footer-link">Private Cabins</a></li>
+          <li><a href="#features"  class="footer-link">Open Work Areas</a></li>
+          <li><a href="#features"  class="footer-link">Conference Rooms</a></li>
+          <li><a href="#amenities" class="footer-link">Amenities</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-heading">Contact Us</h4>
+        <ul class="footer-contact-list">
+          <li class="footer-contact-item footer-contact-item-start">
+            <svg class="icon-sm footer-contact-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            <span>Plot No. E-272, Industrial Area,<br/>Sector 75, Mohali, Punjab 140307</span>
+          </li>
+          <li class="footer-contact-item">
+            <svg class="icon-sm footer-contact-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            <a href="tel:+911234567890" class="footer-contact-link">+91 96462 00037</a>
+          </li>
+          <li class="footer-contact-item">
+            <svg class="icon-sm footer-contact-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            <a href="mailto:hello@cloudview75.com" class="footer-contact-link">hello@cloudview75.com</a>
+          </li>
+          <li>
+            <a href="https://www.google.com/maps/dir/30.760068,76.6302577/Cloud+View+75,+Plot+No+E-272,+Industrial+Area,+Sector+75,+Sahibzada+Ajit+Singh+Nagar,+Punjab+140307/@30.7325537,76.623677,13z/data=!4m10!4m9!1m1!4e1!1m5!1m1!1s0x390fefd418477c95:0xe50e6531a1b9a0c!2m2!1d76.6889139!2d30.6984346!5i2?entry=ttu&g_ep=EgoyMDI2MDUwMi4wIKXMDSoASAFQAw%3D%3D"
+               target="_blank" rel="noopener noreferrer"
+               class="footer-maps-link">
+              <svg class="icon-xs" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+              Get Directions on Google Maps
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 Cloud View 75. All rights reserved. · Sector 75, Mohali, Punjab</p>
+      <div class="footer-legal-links">
+        <a href="#" class="footer-legal-link">Privacy Policy</a>
+        <a href="#" class="footer-legal-link">Terms of Use</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════ LIGHTBOX MODAL ═══════════════ -->
+<div id="lightboxModal" class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Image preview">
+  <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">
+    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/></svg>
+  </button>
+  <button class="lightbox-nav lightbox-nav-prev" id="lightboxPrev" aria-label="Previous image">
+    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"/></svg>
+  </button>
+  <button class="lightbox-nav lightbox-nav-next" id="lightboxNext" aria-label="Next image">
+    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
+  </button>
+  <div class="lightbox-card-wrap" id="lightboxCardWrap">
+    <div class="lightbox-card">
+      <div class="lb-track" id="lbTrack">
+        <img id="lightboxImg" src="" alt="Preview" class="lightbox-img" />
+      </div>
+    </div>
+  </div>
+  <div class="lightbox-counter" id="lightboxCounter"></div>
+  <div class="lb-film" id="lbFilm">
+    <div class="lb-film-track" id="lbFilmTrack"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
